@@ -24,10 +24,14 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Tom Muir</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div style="position: absolute;">
+      <audio hidden allow="autoplay" id="audio" controls></audio>
+      <canvas id="main" width="500" height="500"></canvas>
+    </div>
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -39,5 +43,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script type="text/javascript" src="%PUBLIC_URL%/swave.js"></script>
   </body>
 </html>
