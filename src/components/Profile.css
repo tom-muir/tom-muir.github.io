@@ -1,3 +1,25 @@
+.title {
+  display: flex;
+  height: 10vh;
+  padding: 0 1%;
+}
+.title h2 {
+  display: inline;
+  margin: 0;
+}
+
+.name {
+  text-align: left;
+}
+
+.links {
+  text-align: right
+}
+
+.scroll {
+  width: 100%;
+}
+
 ul {
   margin-bottom: 0;
 }

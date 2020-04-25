@@ -1,27 +1,24 @@
-import * as React from "react";
+import React, { useRef } from 'react';
+import { useScrollPosition } from '@huse/scroll-position';
+import { isMobile } from "react-device-detect";
 
 import { Profile } from "./Profile";
 
 import "./Home.css";
 
-const Title = () => (
-  <>
-    <h1>Tom Muir</h1>
-    <h2>
-      <a href="https://github.com/muir-t">GitHub</a>
-      {" - "}
-      <a href="https://www.linkedin.com/in/thomas-muir-468ba5145">LinkedIn</a>
-    </h2>
-  </>
-);
+export const Home = () => {
+  const ref = useRef();
+  const position = useScrollPosition(ref.current);
 
-export const Home = () => (
-  <div className="top">
-    <section className="header">
-      <Title />
-    </section>
-    <section className="content">
-      <Profile />
-    </section>
-  </div>
-);
+  return (
+    <>
+      <div ref={ref} className="top">
+        {!isMobile &&
+          <section className="header"/>
+        }
+        <section className="content">
+          <Profile pagePosition={position} />
+        </section>
+      </div>
+    </>
+  )};
