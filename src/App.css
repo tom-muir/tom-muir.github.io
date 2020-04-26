@@ -33,6 +33,10 @@ a:visited {
   text-decoration: none;
 }
 
+p {
+  font-size: 0.75em;
+}
+
 h2 {
   font-size: 1em;
   width: 100%;

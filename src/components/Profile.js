@@ -21,18 +21,12 @@ const Title = (props) => {
 export const Profile = (props) => (
   <>
     <Title pagePosition={props.pagePosition}/>
-    <img src="profile_image.jpg" alt="my face" height="100" width="100" />
-    <p>Computer Science graduate and 3D designer.</p>
-    <h4>Main things:</h4>
-    <ul>
-      <li>
-        - Graduated from Durham University with First Class Honors in Computer
-        Science
-      </li>
-      <li>
-        - Worked part time as a 3D visualiser in the high-end jewellery industry
-        for over 5 years
-      </li>
-    </ul>
+    <img src="profile-image.jpg" alt="my face" height="350" width="200" />
+    <h2>Computer Science graduate and 3D designer.</h2>
+    <p>Currently employed as full stack web developer at Tripadvisor, previously worked as a
+    3D CAD artist for a highend diamond jeweller. Graduated from Durham university with a
+    bachelor's degree in computer science, achieving a first.</p>
+    <p>If you want to read some trash, go to my <a rel="noopener noreferrer" target="_blank"  href="https://github.com/tom-muir">Github</a> (Disclaimer: my personal
+      projects do not reflect what I consider to be production code, I swear...)</p>
   </>
 );
